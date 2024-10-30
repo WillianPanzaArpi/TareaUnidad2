@@ -4,12 +4,17 @@
 package com.poo_unidad2.uni1a;
 
 // Subclase SerieDeTV que extiende de ContenidoAudiovisual
+
+import java.util.ArrayList;
+
 public class SerieDeTV extends ContenidoAudiovisual {
     private int temporadas;
+    private ArrayList<Temporada> listaTemporadas;
 
     public SerieDeTV(String titulo, int duracionEnMinutos, String genero, int temporadas) {
         super(titulo, duracionEnMinutos, genero);
         this.temporadas = temporadas;
+        this.listaTemporadas = new ArrayList<>();
     }
 
     public int getTemporadas() {
