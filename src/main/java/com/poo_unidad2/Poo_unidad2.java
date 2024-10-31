@@ -21,12 +21,14 @@ public class Poo_unidad2 {
         System.out.println("Hello from Eclipse!");
 
         // Crear instancias de las subclases
-        ContenidoAudiovisual[] contenidos = new ContenidoAudiovisual[5];
+        ContenidoAudiovisual[] contenidos = new ContenidoAudiovisual[7];
         contenidos[0] = new Pelicula("Avatar", 125, "Accion", "20th Century Studios");
         contenidos[1] = new SerieDeTV("Game of Thrones", 60, "Fantasy", 8);
         contenidos[2] = new Documental("Cosmos", 45, "Science", "Astronomy");
         contenidos[3] = new Caricaturas(1998, 20," Seria de 20 temmporadas una esponja baja el mar", "Bob Esponja", 45, "Animacion");
-        contenidos[4] = new VideoYoutube("Videos de viajes", 20,"  Viaje al mas alla", 45, "Viajes");
+        contenidos[4] = new VideoYoutube("Videos de viajes", 20,"  Viaje al mas alla", 1, "Viajes");
+        contenidos[5] = new VideoYoutube("Videos de comedia", 10,"  Comdia ecuatoriana", 45, "Viajes");
+        contenidos[6] = new VideoYoutube("Videos de Blogs", 3,"  Vida cotidiana", 30, "Viajes");
 
         // Mostrar los detalles de cada contenido audiovisual
         for (ContenidoAudiovisual contenido : contenidos) {
